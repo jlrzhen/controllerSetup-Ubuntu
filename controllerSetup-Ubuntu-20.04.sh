@@ -7,7 +7,7 @@ printf "\ninstalling Ansible...\n"
 sudo apt install -y python3-distutils python3-testresources
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py --user && python3 -m pip install --user ansible
-export PATH="$HOME/.local/bin:$PATH"
+echo "export PATH=\"$HOME/.local/bin:$PATH\"" >> .bashrc
 
 printf "\ninstalling Terraform...\n"
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
