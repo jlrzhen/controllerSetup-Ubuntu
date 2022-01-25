@@ -20,4 +20,4 @@ touch ~/.bashrc
 terraform -install-autocomplete
 
 printf "\nDone.\n"
-terraform --version && echo && git --version && echo && ansible --version
+terraform --version && echo && git --version && echo && ~/.local/bin/ansible --version
