@@ -1,5 +1,5 @@
 ---
-- name: Installs Terraform and Docker on Ubuntu hosts
+- name: Installs Terraform, Docker, and Docker-Compose on Ubuntu hosts
   hosts: ubuntu
   become: yes
 
@@ -23,3 +23,8 @@
       sudo apt-get install -y docker-ce docker-ce-cli containerd.io      
       sudo groupadd docker
       sudo usermod -aG docker $USER
+
+  - name: Installs Docker-Compose on Ubuntu hosts
+    ansible.builtin.shell: |
+      sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+      sudo chmod +x /usr/local/bin/docker-compose
