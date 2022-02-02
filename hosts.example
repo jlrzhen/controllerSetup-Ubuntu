@@ -1,3 +1,4 @@
+# Use to run playbooks on local machine.
 # Default directory: /etc/ansible/hosts
 [ubuntu]
 localhost ansible_connection=local
