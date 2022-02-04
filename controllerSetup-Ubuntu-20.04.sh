@@ -3,11 +3,12 @@
 printf "\ninstalling Git...\n"
 sudo apt install -y git
 
-printf "\ninstalling Ansible...\n"
+printf "\ninstalling pip and Ansible...\n"
 sudo apt install -y python3-distutils python3-testresources
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py --user && python3 -m pip install --user ansible
 echo "export PATH=\"$HOME/.local/bin:$PATH\"" >> .bashrc
+exec bash
 
 printf "\ninstalling Docker and Docker-Compose Python modules...\n"
 pip install docker docker-compose
