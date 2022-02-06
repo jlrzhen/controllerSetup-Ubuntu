@@ -9,6 +9,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py --user && python3 -m pip install --user ansible
 echo "export PATH=\"$HOME/.local/bin:$PATH\"" >> $HOME/.bashrc
 source $HOME/.bashrc
+exec bash |
 
 printf "\ninstalling Docker and Docker-Compose Python modules...\n"
 pip install docker docker-compose
