@@ -1,6 +1,6 @@
 # Installs Jenkins on Ubuntu 20.04
 sudo apt update
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-11-jdk -y
 java -version
 
 # https://stackoverflow.com/questions/69495517/unable-to-install-jenkins-on-ubuntu-20-04?rq=1
