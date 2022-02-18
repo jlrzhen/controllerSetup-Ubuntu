@@ -15,6 +15,5 @@ sudo apt-get install jenkins -y
 
 sudo usermod -a -G root jenkins
 sudo systemctl restart jenkins
-sudo systemctl status jenkins
-#login from console (localhost) first
+printf "\n\nlogin from console (localhost) first"
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
