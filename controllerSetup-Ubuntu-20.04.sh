@@ -1,7 +1,7 @@
 # Installs Git, Ansible, Docker/Docker-Compose Python modules, and Terraform on Ubuntu 20.04 host
 
-printf "\ninstalling Git and Python 3.8...\n"
-sudo apt install -y git python3.8
+printf "\ninstalling Git...\n"
+sudo apt install -y git
 
 printf "\ninstalling pip and Ansible...\n"
 sudo apt install -y python3-distutils python3-testresources
