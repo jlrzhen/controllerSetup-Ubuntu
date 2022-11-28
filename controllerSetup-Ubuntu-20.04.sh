@@ -5,12 +5,14 @@ select ubuntu_controller_ver in 20.04 22.04 Quit
 do
     case $ubuntu_controller_ver in
         "20.04")
-            controller_python_ver="python3.8";;
+            controller_python_ver="python3.8"
+            break;;
         "22.04")
-            controller_python_ver="python3";;
+            controller_python_ver="python3"
+            break;;
         "Quit")
-           echo "Quit"
-           break;;
+            echo "Quit"
+            break;;
         *)
            echo "Enter a valid number";;
     esac
