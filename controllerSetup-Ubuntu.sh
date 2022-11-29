@@ -52,5 +52,8 @@ printf "\nenabling Terraform tab completion...\n"
 touch ~/.bashrc
 terraform -install-autocomplete
 
+printf "\ninstalling Packer...\n"
+sudo apt-get install packer
+
 printf "\nDone.\n"
 terraform --version && echo && git --version && echo && ansible --version
