@@ -26,7 +26,7 @@ sudo apt install -y git curl
 printf "\ninstalling pip and Ansible...\n"
 echo "export PATH=\"$HOME/.local/bin:$PATH\"" >> $HOME/.bashrc
 source $HOME/.bashrc
-sudo apt install -y python3-distutils python3-testresources
+sudo apt install -y python3-distutils python3-testresources sshpass
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $controller_python_ver get-pip.py --user && $controller_python_ver -m pip install --user ansible
 
