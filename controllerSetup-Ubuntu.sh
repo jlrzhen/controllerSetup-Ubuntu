@@ -18,6 +18,8 @@ do
     esac
 done
 
+sudo apt remove unattended-upgrades -y
+
 # Installs Git, Ansible, Docker/Docker-Compose Python modules, and Terraform on Ubuntu 20.04 host
 
 printf "\ninstalling Git and curl...\n"
